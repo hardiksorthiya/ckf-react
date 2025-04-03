@@ -1,10 +1,15 @@
-// import logo from './logo.svg';
 import './App.css';
 import Navbar from './componant/Navbar/Navbar';
+import Slider from './componant/Home/slider';
+import Archivementsection from './componant/Home/archivementsection';
 
 function App() {
   return (
-    <Navbar/>
+    <>
+      <Navbar/>
+      <Slider/>
+      <Archivementsection/>
+    </>
   );
 }
 

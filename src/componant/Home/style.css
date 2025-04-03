@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --primary-color: #032D6E;
+    --secondary-color: #f58020;
+    --tertiary-color: #fff;
+}
+h3.titletextslider {
+    font-size: 42px;
+    font-weight: 600;
+    max-width: 900px;
+    line-height: 70px;
+}
+p.subtitleslider {
+    font-size: 20px;
+    max-width: 960px;
+}
+.btnslider {
+    background: #fff;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.btnslider:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+.slider-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: #00000036;
+    border-radius: 115px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    left: 3%;
+}
+
+.slider-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: #00000036;
+    border-radius: 115px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    right: 3%;
+}
+
+.slick-dots {
+    bottom: 5% !important;
+}
+.slick-dots li button:before {
+    font-size: 16px !important;
+}
+.bg-archivment {
+    box-shadow: 2px 2px 4px #00000015, -2px -2px 4px #00000012;
+    border-radius: 20px;
+    margin-top: -100px;
+    position: relative;
+    background: white;
+    z-index: 10;
+}
