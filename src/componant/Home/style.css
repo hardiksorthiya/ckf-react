@@ -82,19 +82,21 @@ h2.empowerment-text span {
 img.image-empowerment {
     position: absolute;
     z-index: 13;
-    left: 31%;
-    top: 7%;
+    left: 30%;
+    top: 11%;
 }
 .arrow {
     position: absolute;
     width: 130px;
-    height: 20px;
+    height: 16px;
     background: linear-gradient(135deg, #38c8c4, #3ACECA);
-    top: 50%;
+    top: 79%;
     left: 50%;
     z-index: 12;
 }
-
+.empowerment-card.position-relative {
+    padding: 5px;
+}
 .arrow:before, .arrow:after {
     display: block;
     content: "";
@@ -141,4 +143,20 @@ img.image-empowerment {
 }
 #icon-circle1{
     border-color: transparent transparent rgb(58, 206, 202) rgb(58, 206, 202);
+}
+.empowerment-card-content.text-center {
+    padding: 90px 20px;
+    margin-top: -70px;
+    box-shadow: 4px 4px 10px #00000010, -4px -4px 10px #00000012;
+    border-radius: 50px;
+}
+.empowerment-card-content:after {
+    content: "";
+    background: #ffffff;
+    position: absolute;
+    width: 87%;
+    height: 141px;
+    top: -6%;
+    left: 15%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
