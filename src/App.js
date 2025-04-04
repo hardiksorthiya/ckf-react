@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './componant/Navbar/Navbar';
 import Slider from './componant/Home/slider';
 import Archivementsection from './componant/Home/archivementsection';
+import Empowerment from './componant/Home/empowerment';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <Slider/>
       <Archivementsection/>
+      <Empowerment/>
     </>
   );
 }

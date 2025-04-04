@@ -69,3 +69,76 @@ p.subtitleslider {
     background: white;
     z-index: 10;
 }
+/* empowerment */
+
+h2.empowerment-text {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+h2.empowerment-text span {
+    color: var(--secondary-color);
+}
+
+img.image-empowerment {
+    position: absolute;
+    z-index: 13;
+    left: 31%;
+    top: 7%;
+}
+.arrow {
+    position: absolute;
+    width: 130px;
+    height: 20px;
+    background: linear-gradient(135deg, #38c8c4, #3ACECA);
+    top: 50%;
+    left: 50%;
+    z-index: 12;
+}
+
+.arrow:before, .arrow:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 6.2rem;
+    background: #3ACECA;
+    width: 4.2rem;
+    height: 1.3rem;
+    transform-origin: 0.2rem center;
+    transition: 0.5s;
+    border-radius: 1rem;
+}
+.arrow:before {
+    transform: rotate(45deg);
+    top: -40px;
+}
+.arrow:after {
+    transform: rotate(315deg);
+    bottom: -40px;
+}
+.icon {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, var(--primary-light-color) 40%, var(--primary-dark-color) 100%);
+    overflow: visible;
+    z-index: 10;
+}
+.icon-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 17px solid;
+    border-color: var(--primary-light-color) var(--primary-light-color);
+    border-top: 17px solid transparent;
+    border-right: 17px solid transparent;
+    rotate: 30deg;
+    top: 10%;
+}
+#icon1{
+    background: linear-gradient(180deg, #3ACECA, #097189);
+}
+#icon-circle1{
+    border-color: transparent transparent rgb(58, 206, 202) rgb(58, 206, 202);
+}
