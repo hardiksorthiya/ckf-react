@@ -3,12 +3,12 @@ import './style.css'
 
 const ProcessSection = () => {
       const processItem = [
-        { id: 1, step:"01", icon: "../../assets/images/Requirment.gif", title: "Requirements", description: "Clear requirements to align goals and create tailored, effective solutions." },
-        { id: 2, step:"02", icon: "../../assets/images/Anaylsis2.gif", title: "Analysis", description: "In-depth analysis to understand needs, identify opportunities, and drive solutions." },
-        { id: 3, step:"03", icon: "../../assets/images/output-onlinegiftools.gif", title: "UI Design", description: "Creating intuitive, user-friendly designs to enhance experience and engagement." },
-        { id: 4, step:"04", icon: "../../assets/images/development.gif", title: "Development", description: "Building robust, scalable solutions with cutting-edge technology and agility." },
-        { id: 5, step:"05", icon: "../../assets/images/QATEST.gif", title: "QA Test", description: "Rigorous testing to ensure quality, reliability, and performance of the solution." },
-        { id: 6, step:"06", icon: "../../assets/images/Complete2.gif", title: "Complete", description: "Finalizing and delivering the product, ensuring client satisfaction and success." },
+        { id: 1, step:"01", icon: "./assets/images/Requirment.gif", title: "Requirements", description: "Clear requirements to align goals and create tailored, effective solutions." },
+        { id: 2, step:"02", icon: "./assets/images/Anaylsis2.gif", title: "Analysis", description: "In-depth analysis to understand needs, identify opportunities, and drive solutions." },
+        { id: 3, step:"03", icon: "./assets/images/output-onlinegiftools.gif", title: "UI Design", description: "Creating intuitive, user-friendly designs to enhance experience and engagement." },
+        { id: 4, step:"04", icon: "./assets/images/development.gif", title: "Development", description: "Building robust, scalable solutions with cutting-edge technology and agility." },
+        { id: 5, step:"05", icon: "./assets/images/QATEST.gif", title: "QA Test", description: "Rigorous testing to ensure quality, reliability, and performance of the solution." },
+        { id: 6, step:"06", icon: "./assets/images/Complete2.gif", title: "Complete", description: "Finalizing and delivering the product, ensuring client satisfaction and success." },
         ];
 
     return (

@@ -7,11 +7,11 @@ import { useRef } from "react";
 
 
 const slides = [
-    { id: 1, image: "../assets/images/slide1.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
-    { id: 2, image: "../assets/images/slide2.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
-    { id: 3, image: "../assets/images/slide3.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
-    { id: 4, image: "../assets/images/slide4.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
-    { id: 5, image: "../assets/images/slide5.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
+    { id: 1, image: "./assets/images/slide1.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
+    { id: 2, image: "./assets/images/slide2.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
+    { id: 3, image: "./assets/images/slide3.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
+    { id: 4, image: "./assets/images/slide4.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
+    { id: 5, image: "./assets/images/slide5.png", texttitle: "We Transform Transforms Craft Translate Ideas Into Digital Solutions", textsubtitle: "We design and develop unparalleled websites and software solutions that enable companies to unlock their potential.", btntext: "Contact Us" },
   ];
   const overlayText = [
     {id: 1, title:"Our Empowerment", text: "Empowering individuals and communities through knowledge, resources, and cutting-edge solutions to face modern challenges."},
