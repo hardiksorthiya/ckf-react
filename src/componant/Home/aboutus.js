@@ -4,9 +4,9 @@ import  Robot from '../../assets/images/roboto1.png'
 
 export default function aboutus() {
   return (
-    <section className="about-section">
+    <section className="about-section" id='about'>
         <div className='container'>
-            <div className='row'>
+            <div className='row align-items-center'>
                 <div className='col-lg-6 col-md-12 col-sm-12'>
                     <div className='about-content'>
                         <h2>About Us</h2>
@@ -15,7 +15,7 @@ export default function aboutus() {
                     </div>
                     </div>
                 <div className='col-lg-6 col-md-12 col-sm-12'>
-                    <div className='about-image'>
+                    <div className='about-image d-flex justify-content-center align-items-center'>
                         <img src={Robot} alt="About Us" />
                     </div>
                     </div>

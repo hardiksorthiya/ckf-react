@@ -12,7 +12,7 @@ const ProcessSection = () => {
         ];
 
     return (
-        <section className="process-homepage">
+        <section className="process-homepage" id='process'>
             <div className="container my-5">
                 <div className='row'>
                     <div className='title-section text-center mb-4'>

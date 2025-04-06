@@ -11,7 +11,7 @@ const empower = [
 
 const Empowerment = () => {
     return (
-        <div className='container my-5'>
+        <div className='container my-5' id='empowerment'>
             <div className='row'>
                 <div className='title-section text-center mb-4'>
                     <h2 className='empowerment-text'>Empowering with <span>CKF</span></h2>

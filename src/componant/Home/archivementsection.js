@@ -19,7 +19,7 @@ const InfoSection = () => {
         <div className="row g-4">
           {infoItems.map((item) => (
             <div key={item.id} className="col-md-6 col-lg-3">
-              <div className="p-4 rounded-4 shadow-sm text-center bg-light">
+              <div className="p-4 text-center">
                 <div className="mb-3">
                   <img src={item.icon} alt={item.title} width={40} height={40} />
                 </div>

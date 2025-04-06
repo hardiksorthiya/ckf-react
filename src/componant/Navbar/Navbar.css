@@ -1,17 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-:root {
-    --primary-color: #032D6E;
-    --secondary-color: #333;
-    --tertiary-color: #fff;
-}
+
 img.logo-name {
     width: 150px;
 }
@@ -22,3 +9,76 @@ img.logo-name {
 section.navbar-section {
     box-shadow: 2px 2px 10px #80808052;
 }
+ul.nav a.active {
+    color: var(--secondary-color);
+}
+ul.nav a {
+    font-weight: 500;
+}
+  /* Sticky Navbar */
+  .navbar-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 10px #80808052;
+  }
+  
+  /* Mobile Toggle Icon */
+  .mobile-toggle {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu Overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    height: 100%;
+    width: 250px;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    transition: left 0.3s ease;
+  }
+  
+  .mobile-menu-overlay.open {
+    left: 0;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 26px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /* Mobile Links */
+  .mobile-nav-links {
+    list-style: none;
+    padding: 50px 20px;
+  }
+  
+  .mobile-nav-links li {
+    margin-bottom: 20px;
+  }
+  
+  .mobile-nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Animate.css fadeIn */
+  @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+  

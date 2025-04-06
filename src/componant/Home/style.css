@@ -9,11 +9,18 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+}
 :root {
     --primary-color: #032D6E;
     --secondary-color: #f58020;
     --tertiary-color: #fff;
+}
+p{
+    font-family: 'poppins', sans-serif;
 }
 
 h3.titletextslider {
@@ -62,11 +69,28 @@ p.subtitleslider {
     color: white;
     right: 3%;
 }
-
+.hero-overlay {
+    z-index: 1;
+    width: 100%;
+}
+.hero-overlay .col-2 {
+    width: 19.666667%;
+    margin-top: 20px;
+}
+p.title-scr {
+    font-weight: 500;
+    font-size: 20px;
+}
+.hero-overlay .col-2:nth-child(2), .hero-overlay .col-2:nth-child(3), .hero-overlay .col-2:nth-child(4) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
 .slick-dots {
     bottom: 5% !important;
 }
-
+.text-slider-hp {
+    margin-top: 80px;
+}
 .slick-dots li button:before {
     font-size: 16px !important;
 }
@@ -340,6 +364,9 @@ div#services-square {
     justify-content: center;
     position: relative;
 }
+.services-main-part:nth-child(odd) .services-icon {
+    flex-direction: row-reverse;
+}
 
 .services-square1 {
     background: linear-gradient(135deg, #3ACECA, #097189);
@@ -375,9 +402,7 @@ div#services-square {
     border: none;
     height: 3px;
     background: #000;
-    width: 30%;
-    position: absolute;
-    left: 7%;
+    width: 50%;
     z-index: 0;
 }
 
@@ -405,10 +430,6 @@ div#services-square {
     background: repeating-linear-gradient(90deg, #17C65D, #0B9A3D 7px, transparent 6px, transparent 12px);
 }
 
-#services-circle {
-    position: absolute;
-    left: 0;
-}
 
 .services-circle1 .circle {
     background: linear-gradient(90deg, #3ACECA, #097189);
@@ -439,16 +460,25 @@ div#services-square {
     height: 15px;
     border-radius: 50%;
 }
+div#services-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #services-circle .ringring {
     -webkit-border-radius: 30px;
     height: 30px;
     width: 30px;
     position: absolute;
-    top: -7px;
-    left: -8px;
+    
 }
-
+.services-icon-bg {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
 .services-circle1 .ringring {
     border: 3px dashed #168a9a;
 }
@@ -478,13 +508,6 @@ div#services-square {
     flex-direction: row-reverse;
 }
 
-.services-main-part:nth-child(even) #services-circle {
-    left: 95%;
-}
-
-.services-main-part:nth-child(even) .border-dahed {
-    left: 63%;
-}
 
 
 /* process */
@@ -701,3 +724,98 @@ div#services-square {
 .process-hp:nth-child(3) .step-process .step-direction, .process-hp:nth-child(5) .step-process .step-direction {
     transform: rotate(180deg) scaleX(-1);
 }
+.step-content {
+    margin-left: 50px;
+}
+.about-content {
+    font-family: poppins;
+}
+.about-image img {
+    width: 50%;
+}
+.about-content {
+    position: relative;
+}
+.about-content h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.about-content h2:after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: black;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+.border-dahed {
+    width: 57%;
+}
+}
+@media screen and (max-width: 769px){
+    .hero-overlay {
+        display: none !important;
+    }
+    .text-slider-hp {
+        margin-top: 0;
+    }
+    .empowerment-bg {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 430px){
+.services-main-part .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.services-icon {
+    margin-bottom: 100px;
+}
+/* 
+#border-dahed1 {
+    background: repeating-linear-gradient(180deg, #3ACECA, #097189 7px, transparent 6px, transparent 12px);
+}
+#border-dahed2 {
+    background: repeating-linear-gradient(180deg, #FC9C10, #FF5D15 7px, transparent 6px, transparent 12px);
+}
+#border-dahed3 {
+    background: repeating-linear-gradient(180deg, #ED1B5C, #B20644 7px, transparent 6px, transparent 12px);
+}
+#border-dahed4 {
+    background: repeating-linear-gradient(180deg, #177FC6, #09488E 7px, transparent 6px, transparent 12px);
+}
+#border-dahed5 {
+    background: repeating-linear-gradient(180deg, #9747FF, #5B2DFF 7px, transparent 6px, transparent 12px);
+}
+#border-dahed6 {
+    background: repeating-linear-gradient(180deg, #17C65D, #0B9A3D 7px, transparent 6px, transparent 12px);
+} */
+}
+
+
+
+

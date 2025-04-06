@@ -12,7 +12,7 @@ const ServiceSection = () => {
   ];
 
   return (
-    <section className="services-homepage"
+    <section className="services-homepage" id='services'
       style={{
         backgroundImage: `url('../../assets/images/servicbg.png')`,
         backgroundSize: 'cover',
@@ -26,24 +26,28 @@ const ServiceSection = () => {
           </div>
         </div>
         <div className='row'>
-          <div className='col-xl-12 col-lg-10 col-md-12'>
+          <div className='col-xl-12 col-lg-12 col-md-12'>
             {servicesItems.map((item) => (
               <div className='services-main-part' key={item.id}>
                 <div className='row align-items-center'>
-                  <div className='col-xl-4 col-md-6' >
+                  <div className='col-xl-4 col-lg-5 col-md-6' >
                     <div className='services-item text-center'>
                       <h3 className={`stitle${item.id}`}>{item.title}</h3>
                       <p>{item.description}</p>
                     </div>
                   </div>
-                  <div className='col-xl-3 col-md-6' >
+                  <div className='col-xl-3 col-lg-6 col-md-6' >
                     <div className='services-icon text-end' id={`serviceicon${item.id}`}>
+                      <div className='services-icon-bg' id={`servicesiconbg${item.id}`}>
                       <img src={item.icon} alt={item.title} />
                       <div className={`services-square${item.id}`} id="services-square"></div>
+                      </div>
+                      
                       <div className='border-dahed' id={`border-dahed${item.id}`}></div>
                       <div className={`services-circle${item.id}`} id="services-circle">
-                      <div class="ringring"></div>
                       <div class="circle"></div>
+                      <div class="ringring"></div>
+
                       </div>
                     </div>
                   </div>

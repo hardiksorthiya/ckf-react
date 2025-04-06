@@ -6,6 +6,8 @@ import Empowerment from './componant/Home/empowerment';
 import Services from './componant/Home/services';
 import ProcessSection from './componant/Home/process';
 import Aboutus from './componant/Home/aboutus';
+import Footer from './componant/Footer/Footer';
+import React from 'react';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Services/>
       <ProcessSection/>
       <Aboutus/>
+      <Footer/>
     </>
   );
 }

@@ -1,0 +1,58 @@
+.footer {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer .newsletter-section input {
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .footer .newsletter-section button {
+    border-radius: 8px;
+    background-color: #ff7a4f;
+    color: white;
+    border: none;
+  }
+  
+  .footer .footer-main {
+    background-color: var(--primary-color);
+    padding: 150px 0 10px;
+}
+  
+  .footer .footer-main ul li {
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .footer .footer-main p {
+    line-height: 30px;
+}
+.footer-main hr {
+    height: 4px;
+    background: white;
+    opacity: 1;
+    border-radius: 20px;
+    max-width: 160px;
+}
+.newsletter-section {
+    margin-bottom: -80px;
+}
+footer a:hover {
+    color: var( --secondary-color);
+}
+.social-icon-fb svg path {
+    fill: #80808075;
+}
+.social-icon-fb svg {
+    background: white;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    transition: all 0.3s ease-in-out;
+}
+.social-icon-fb svg:hover {
+    background: var(--secondary-color);
+}
+.social-icon-fb svg:hover path {
+    fill: white;
+}
