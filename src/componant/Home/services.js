@@ -14,7 +14,7 @@ const ServiceSection = () => {
   return (
     <section className="services-homepage" id='services'
       style={{
-        backgroundImage: `url('../../assets/images/servicbg.png')`,
+        backgroundImage: `url('./assets/images/servicbg.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '20px 0',
@@ -22,7 +22,7 @@ const ServiceSection = () => {
       <div className="container my-5">
         <div className='row'>
           <div className='title-section text-center mb-4'>
-            <h2 className='empowerment-text text-white'>Our  <span>services</span></h2>
+            <h2 className='empowerment-text text-white'>Our <span>services</span></h2>
           </div>
         </div>
         <div className='row'>
