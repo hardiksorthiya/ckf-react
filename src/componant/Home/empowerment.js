@@ -2,10 +2,10 @@ import React from 'react'
 import './style.css'
 
 const empower = [
-    { id: 1, image: "../assets/images/mission.gif", texttitle: "Mission", textsubtitle: "Innovate, Build, Excel", textcontent: "Delivering tailored software solutions that enhance business productivity and competitiveness, positioning us as trusted partners in clients' digital transformation journeys." },
-    { id: 2, image: "../assets/images/vision.gif", texttitle: "Vision", textsubtitle: "Shaping Tomorrow's Tech", textcontent: "To empower organizations through innovative software, driving impactful change, efficiency, and growth in a digitally connected world." },
-    { id: 3, image: "../assets/images/value.gif", texttitle: "Value", textsubtitle: "Integrity, Innovation, Excellence", textcontent: "We prioritize innovation, integrity, and client-focused solutions to deliver high-quality software." },
-    { id: 4, image: "../assets/images/target.gif", texttitle: "Goal", textsubtitle: "Driving Impact Through Technology", textcontent: "To be a leading technology partner, delivering high-impact software solutions that drive digital transformation and empower businesses." },
+    { id: 1, image: "./assets/images/mission.gif", texttitle: "Mission", textsubtitle: "Innovate, Build, Excel", textcontent: "Delivering tailored software solutions that enhance business productivity and competitiveness, positioning us as trusted partners in clients' digital transformation journeys." },
+    { id: 2, image: "./assets/images/vision.gif", texttitle: "Vision", textsubtitle: "Shaping Tomorrow's Tech", textcontent: "To empower organizations through innovative software, driving impactful change, efficiency, and growth in a digitally connected world." },
+    { id: 3, image: "./assets/images/value.gif", texttitle: "Value", textsubtitle: "Integrity, Innovation, Excellence", textcontent: "We prioritize innovation, integrity, and client-focused solutions to deliver high-quality software." },
+    { id: 4, image: "./assets/images/target.gif", texttitle: "Goal", textsubtitle: "Driving Impact Through Technology", textcontent: "To be a leading technology partner, delivering high-impact software solutions that drive digital transformation and empower businesses." },
 
 ];
 
