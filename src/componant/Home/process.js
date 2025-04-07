@@ -22,7 +22,7 @@ const ProcessSection = () => {
                 </div>
                 <div className='row'>
                 {processItem.map((item) => (
-                    <div className='col-xl-2 col-lg-6 col-md-6 col-sm-12 process-hp' key={item.id}>
+                    <div className='col-xl-2 col-lg-6 col-md-6 col-sm-12 col-6 process-hp' key={item.id}>
                         <div className="step-process">
                             <div className="step-section">
                                 <div className="step-box">

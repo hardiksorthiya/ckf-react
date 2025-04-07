@@ -19,16 +19,39 @@ const Empowerment = () => {
             </div>
             <div className='row'>
                 {empower.map((item) => (
-                    <div className='col-xl-3 col-lg-4 col-md-6' key={item.id}>
+                    <div className='col-xl-3 col-lg-6 col-md-6' key={item.id}>
                         <div className='empowerment-card position-relative'>
                             <div className='empowerment-card-image position-relative'>
                                 <img src={item.image} alt='empowerment' className='image-empowerment' />
-                                <div className="arrow" id={`arrow${item.id}`}></div>
+                                <div className="arrow" id={`arrow${item.id}`}>
+                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.57 140.14">
+                                        <defs>
+                                            <linearGradient id="linear-gradient-arrow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#3ACECA" />
+                                                <stop offset="100%" stopColor="#097189" />
+                                            </linearGradient>
+                                            <linearGradient id="linear-gradient-arrow2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#FC9C10" />
+                                                <stop offset="100%" stopColor="#FF5D15" />
+                                            </linearGradient>
+                                            <linearGradient id="linear-gradient-arrow3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#B30745" />
+                                                <stop offset="100%" stopColor="#FD348C" />
+                                            </linearGradient>
+                                            <linearGradient id="linear-gradient-arrow4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" stopColor="#23A6DC" />
+                                                <stop offset="100%" stopColor="#0A498F" />
+                                            </linearGradient>
+                                        </defs>
+                                        <title>Vector</title>
+                                        <path d="M209.47,79.41,171.35,41.29a10.68,10.68,0,0,0-14.27-.87,10,10,0,0,0-3.48,7.83,10.9,10.9,0,0,0,3,7.31l23.33,23.16H84.66A44.31,44.31,0,0,1,28.09,11.87L16.77.56A60.92,60.92,0,0,0,.93,42.16c.18,33.77,28.2,60.93,62,60.93H176.57l-20.19,20.19a10.47,10.47,0,0,0,.17,14.8c4,3.82,10.8,3.3,14.63-.53L209.3,99.43A14.24,14.24,0,0,0,209.47,79.41Z" transform="translate(-0.93 -0.56)" /></svg>
+                                </div>
                                 <div className="icon m-auto " id={`icon${item.id}`}>
-                                    <div className={`icon-circle${item.id} m-auto my-3`} id="icon-circle"></div>
+                                    <div className={`icon-circle${item.id} m-auto my-3 d-none`} id="icon-circle"></div>
                                 </div>
                             </div>
-                            <div className='empowerment-card-content text-center position-relative'>
+                            <div className='empowerment-card-with-text'>
+                            <div className='empowerment-card-content text-center'>
                                 <h3 className='empowerment-card-title'>{item.texttitle}</h3>
                                 <h6 className='empowerment-card-title'>{item.textsubtitle}</h6>
                                 <p className='empowerment-card-text'>{item.textcontent}</p>
@@ -36,6 +59,8 @@ const Empowerment = () => {
                             <div className='empowerment-bg'>
                                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246 368"><title>Vector</title><path class="cls-1" d="M240.49,340.57,154,379.73a33.68,33.68,0,0,1-27.49.18L35,340.4A33.82,33.82,0,0,1,14.5,309.24V51.31c.17-27,28.18-44.55,52.37-32.89L239.8,102A36.61,36.61,0,0,1,260.5,135V309.42A33.9,33.9,0,0,1,240.49,340.57Z" transform="translate(-14.5 -14.76)" /></svg>
                             </div>
+                            </div>
+                            
                             <div className='empowerment-bg2'>
                                 <svg id="Layer_bg2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 121">
                                     <defs>
