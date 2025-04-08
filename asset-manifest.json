@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ckf-react/static/css/main.7a32e753.css",
-    "main.js": "/ckf-react/static/js/main.023fe908.js",
+    "main.css": "/ckf-react/static/css/main.152a9128.css",
+    "main.js": "/ckf-react/static/js/main.a0229f06.js",
     "static/js/453.0b9e49d4.chunk.js": "/ckf-react/static/js/453.0b9e49d4.chunk.js",
     "static/media/roboto1.png": "/ckf-react/static/media/roboto1.50fd0f59190ce86672d1.png",
     "static/media/usericon.svg": "/ckf-react/static/media/usericon.ed73055452de2464375b15531a0b74f8.svg",
@@ -13,12 +13,12 @@
     "static/media/slick.woff": "/ckf-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ckf-react/index.html",
     "static/media/producticon.svg": "/ckf-react/static/media/producticon.9db41ea7add736cf097385e28650d8cf.svg",
-    "main.7a32e753.css.map": "/ckf-react/static/css/main.7a32e753.css.map",
-    "main.023fe908.js.map": "/ckf-react/static/js/main.023fe908.js.map",
+    "main.152a9128.css.map": "/ckf-react/static/css/main.152a9128.css.map",
+    "main.a0229f06.js.map": "/ckf-react/static/js/main.a0229f06.js.map",
     "453.0b9e49d4.chunk.js.map": "/ckf-react/static/js/453.0b9e49d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a32e753.css",
-    "static/js/main.023fe908.js"
+    "static/css/main.152a9128.css",
+    "static/js/main.a0229f06.js"
   ]
 }
