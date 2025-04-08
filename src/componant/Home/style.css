@@ -827,6 +827,9 @@ p.empowerment-card-text {
 input.w-50.shadow-sm.form-control {
     width: 100% !important;
 }
+   div#services-circle{
+       display: none
+   }
 
 }
 
