@@ -19,7 +19,7 @@ const Empowerment = () => {
             </div>
             <div className='row'>
                 {empower.map((item) => (
-                    <div className='col-xl-3 col-lg-6 col-md-6' key={item.id}>
+                    <div className='col-xl-3 col-lg-6 col-md-6' key={item.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={item.id * 300}>
                         <div className='empowerment-card position-relative'>
                             <div className='empowerment-card-image position-relative'>
                                 <img src={item.image} alt='empowerment' className='image-empowerment' />

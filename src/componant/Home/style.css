@@ -213,7 +213,20 @@ img.image-empowerment {
     transform: rotate(315deg);
     bottom: -40px;
 } */
-
+.bg-archivment img {
+    animation: zoom-in-zoom-out 5s ease-out infinite;
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 .icon {
     position: relative;
     width: 150px;

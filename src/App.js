@@ -8,8 +8,13 @@ import ProcessSection from './componant/Home/process';
 import Aboutus from './componant/Home/aboutus';
 import Footer from './componant/Footer/Footer';
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+  AOS.init({
+  }); 
   return (
     <>
       <Navbar/>
@@ -23,5 +28,7 @@ function App() {
     </>
   );
 }
+
+
 
 export default App;

@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './style.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ServiceSection = () => {
   const servicesItems = [
@@ -10,7 +12,11 @@ const ServiceSection = () => {
     { id: 5, icon: "./assets/images/5.DevOps.gif", title: "Dev Ops", description: "Optimizing development and operations processes to accelerate delivery timelines while ensuring consistent, reliable results. By integrating automation, continuous integration/continuous deployment (CI/CD), and efficient workflows, we help businesses improve collaboration, reduce errors, and deliver high-quality solutions faster and more effectively." },
     { id: 6, icon: "./assets/images/6.Ai.gif", title: "Artificial intelligence", description: "Utilizing artificial intelligence to enhance business intelligence and automate processes, enabling smarter, data-driven decision-making. Our AI solutions analyze vast amounts of data, identify patterns, and provide actionable insights, helping businesses optimize operations, improve efficiency, and make informed decisions faster." },
   ];
-
+  
+  useEffect(() => {
+    AOS.init({ duration:500});
+  }, [])
+  
   return (
     <section className="services-homepage" id='services'
       style={{
@@ -27,16 +33,16 @@ const ServiceSection = () => {
         </div>
         <div className='row'>
           <div className='col-xl-12 col-lg-12 col-md-12'>
-            {servicesItems.map((item) => (
+            {servicesItems.map((item, index) => (
               <div className='services-main-part' key={item.id}>
                 <div className='row align-items-center'>
                   <div className='col-xl-4 col-lg-5 col-md-6' >
                     <div className='services-item text-center'>
-                      <h3 className={`stitle${item.id}`}>{item.title}</h3>
-                      <p>{item.description}</p>
+                      <h3 className={`stitle${item.id}`} data-aos="fade-up" >{item.title}</h3>
+                      <p data-aos="fade-up">{item.description}</p>
                     </div>
                   </div>
-                  <div className='col-xl-3 col-lg-6 col-md-6' >
+                  <div className='col-xl-3 col-lg-6 col-md-6'  data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}>
                     <div className='services-icon text-end' id={`serviceicon${item.id}`}>
                       <div className='services-icon-bg' id={`servicesiconbg${item.id}`}>
                       <img src={item.icon} alt={item.title} />
