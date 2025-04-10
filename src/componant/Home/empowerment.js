@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.css'
 
 const empower = [
     { id: 1, image: "./assets/images/mission.gif", texttitle: "Mission", textsubtitle: "Innovate, Build, Excel", textcontent: "Delivering tailored software solutions that enhance business productivity and competitiveness, positioning us as trusted partners in clients' digital transformation journeys." },

@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-import './style.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";

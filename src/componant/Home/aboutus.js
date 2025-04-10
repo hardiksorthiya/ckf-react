@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.css'
 import  Robot from '../../assets/images/roboto1.png'
 
 export default function aboutus() {
