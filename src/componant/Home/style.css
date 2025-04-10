@@ -88,9 +88,7 @@ p.title-scr {
 .slick-dots {
     bottom: 5% !important;
 }
-.text-slider-hp {
-    margin-top: 80px;
-}
+
 .slick-dots li button:before {
     font-size: 16px !important;
 }

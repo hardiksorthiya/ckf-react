@@ -11,7 +11,6 @@ const Navbar = () => {
     const heroHeight = document.querySelector('.hero-section')?.offsetHeight || 300;
     setIsSticky(window.scrollY > heroHeight - 100);
 
-    // Scroll-spy logic
     const sections = ['empowerment', 'services', 'process', 'about', 'newslatter'];
     for (let id of sections) {
       const el = document.getElementById(id);
@@ -47,46 +46,38 @@ const Navbar = () => {
         <div className="mobile-menu">
           <button className="close-btn" onClick={() => setMobileMenuOpen(false)}>×</button>
           <ul className="mobile-nav-links">
-            <li><a href='#empowerment'>Our Empowerment</a></li>
-            <li><a href='#services'>Our Services</a></li>
-            <li><a href='#eprocess'>Our Process</a></li>
-            <li><a href='#about' >About Us</a></li>
-            <li><a href='#ewslatter'>Newsletters</a></li>
+            <li><a href="#empowerment" onClick={() => scrollTo('empowerment')}>Our Empowerment</a></li>
+            <li><a href="#services" onClick={() => scrollTo('services')}>Our Services</a></li>
+            <li><a href="#process" onClick={() => scrollTo('process')}>Our Process</a></li>
+            <li><a href="#about" onClick={() => scrollTo('about')}>About Us</a></li>
+            <li><a href="#newslatter" onClick={() => scrollTo('newslatter')}>Newsletters</a></li>
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
 
-      {!isSticky && (
-        <section className="navbar-section py-3">
-          <div className="container d-flex justify-content-between align-items-center">
-            <a className="navbar-brand" href="/"><img src={logo} alt="Cloud Kode Form" className="logo-name" /></a>
-            <div className="d-block d-lg-none">
-              <button className="mobile-toggle" onClick={() => setMobileMenuOpen(true)}>☰</button>
-            </div>
-            <button className="btn btn-contact d-none d-lg-block">Contact Us</button>
-          </div>
-        </section>
-      )}
+      {/* Single Header/Navbar Section */}
+      <header className={`navbar-section ${isSticky ? 'navbar-sticky animate__animated animate__fadeInDown' : ''}`}>
+        <div className="container d-flex justify-content-between align-items-center py-2">
+          <a className="navbar-brand" href="/">
+            <img src={logo} alt="Cloud Kode Form" className="logo-name" />
+          </a>
 
-      {isSticky && (
-        <header className="navbar-sticky animate__animated animate__fadeInDown">
-          <div className="container d-flex justify-content-between align-items-center py-2">
-            <a className="navbar-brand" href="/"><img src={logo} alt="Cloud Kode Form" className="logo-name" /></a>
-            <ul className="nav gap-4 d-none d-lg-flex">
-              <li><a className={activeLink === 'empowerment' ? 'active' : ''}  onClick={() => scrollTo('empowerment')} href='#empowerment'>Our Empowerment</a></li>
-              <li><a className={activeLink === 'services' ? 'active' : ''} onClick={() => scrollTo('services')} href='#services'>Our Services</a></li>
-              <li><a className={activeLink === 'process' ? 'active' : ''} onClick={() => scrollTo('process')} href='#process'>Our Process</a></li>
-              <li><a className={activeLink === 'about' ? 'active' : ''} onClick={() => scrollTo('about')} href='#about'>About Us</a></li>
-              <li><a className={activeLink === 'newslatter' ? 'active' : ''} onClick={() => scrollTo('newslatter')} href='#newslatter'>Newsletters</a></li>
-            </ul>
-            <div className="d-block d-lg-none">
-              <button className="mobile-toggle" onClick={() => setMobileMenuOpen(true)}>☰</button>
-            </div>
-            <button className="btn btn-contact d-none d-lg-block">Contact Us</button>
+          <ul className="nav gap-4 d-none d-lg-flex">
+            <li><a className={activeLink === 'empowerment' ? 'active' : ''} onClick={() => scrollTo('empowerment')} href="#empowerment">Our Empowerment</a></li>
+            <li><a className={activeLink === 'services' ? 'active' : ''} onClick={() => scrollTo('services')} href="#services">Our Services</a></li>
+            <li><a className={activeLink === 'process' ? 'active' : ''} onClick={() => scrollTo('process')} href="#process">Our Process</a></li>
+            <li><a className={activeLink === 'about' ? 'active' : ''} onClick={() => scrollTo('about')} href="#about">About Us</a></li>
+            <li><a className={activeLink === 'newslatter' ? 'active' : ''} onClick={() => scrollTo('newslatter')} href="#newslatter">Newsletters</a></li>
+          </ul>
+
+          <div className="d-block d-lg-none">
+            <button className="mobile-toggle" onClick={() => setMobileMenuOpen(true)}>☰</button>
           </div>
-        </header>
-      )}
+
+          <button className="btn btn-contact d-none d-lg-block">Contact Us</button>
+        </div>
+      </header>
     </>
   );
 };
