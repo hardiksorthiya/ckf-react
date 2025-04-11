@@ -15,7 +15,7 @@ export default function breadcum() {
                     </div>
                     <div className='col-8'>
                         <div className="content">
-                        <img src="/assets/images/mobileapp/mobile.png" alt="Mobile App Mockup" />
+                        <img src="./assets/images/mobileapp/mobile.png" alt="Mobile App Mockup" />
                         </div>
                     </div>
                 </div>

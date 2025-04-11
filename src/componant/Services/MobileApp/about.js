@@ -8,13 +8,13 @@ export default function aboutus() {
                     <div className='col-lg-6 col-md-6 col-sm-12'>
                         <div className='image-section position-relative'>
                             <div className='image-main-ab position-relative d-flex justify-content-center align-items-center'>
-                                <img src="/assets/images/mobileapp/girl.png" alt="Mobile App Mockup" className='img-main-mbabout' />
+                                <img src="./assets/images/mobileapp/girl.png" alt="Mobile App Mockup" className='img-main-mbabout' />
 
                             </div>
-                            <img src="/assets/images/mobileapp/de1.png" alt="Mobile App Mockup" className='de1' />
-                            <img src="/assets/images/mobileapp/de2.png" alt="Mobile App Mockup" className='de2' />
-                            <img src="/assets/images/mobileapp/de3.png" alt="Mobile App Mockup" className='de3' />
-                            <img src="/assets/images/mobileapp/de4.png" alt="Mobile App Mockup" className='de4' />
+                            <img src="./assets/images/mobileapp/de1.png" alt="Mobile App Mockup" className='de1' />
+                            <img src="./assets/images/mobileapp/de2.png" alt="Mobile App Mockup" className='de2' />
+                            <img src="./assets/images/mobileapp/de3.png" alt="Mobile App Mockup" className='de3' />
+                            <img src="./assets/images/mobileapp/de4.png" alt="Mobile App Mockup" className='de4' />
 
                         </div>
                     </div>

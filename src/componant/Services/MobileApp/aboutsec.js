@@ -30,7 +30,7 @@ export default function aboutsec() {
                     <div className='col-lg-6 col-md-6 col-sm-12'>
                         <div className='image-section position-relative'>
                             <div className='image-main-sec position-relative d-flex justify-content-center align-items-center'>
-                                <img src="/assets/images/mobileapp/mobile2.png" alt="Mobile App Mockup" className='img-main-mbaboutsec' />
+                                <img src="./assets/images/mobileapp/mobile2.png" alt="Mobile App Mockup" className='img-main-mbaboutsec' />
                             </div>
                         </div>
                     </div>
