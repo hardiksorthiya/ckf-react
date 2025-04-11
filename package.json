@@ -1,5 +1,5 @@
 {
-
+"homepage": "https://hardiksorthiya.github.io/ckf-react/",
   "name": "ckf",
 
   "version": "0.1.0",
@@ -52,7 +52,11 @@
 
     "test": "react-scripts test",
 
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "predeploy": "npm run build",
+
+    "deploy": "gh-pages -d build"
 
   },
 
