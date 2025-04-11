@@ -4,7 +4,7 @@ export default function aboutus() {
     return (
         <section className="about-mobile-app">
             <div className="container">
-                <div className='row'>
+                <div className='row align-items-center'>
                     <div className='col-lg-6 col-md-6 col-sm-12'>
                         <div className='image-section position-relative'>
                             <div className='image-main-ab position-relative d-flex justify-content-center align-items-center'>

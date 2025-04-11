@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    padding: 0;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -763,14 +768,32 @@ p.empowerment-card-text {
   img.de1 {
     position: absolute;
     left: 1%;
-    top: 5%;
+    top: 20%;
     width: 25%;
+    animation: updown 4s alternate infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-60px);
+    }
 }
 img.de2 {
     position: absolute;
     top: 0;
     left: 0;
     width: 10%;
+    animation: rotate 4s alternate infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 img.img-main-mbabout {
     width: 70%;
@@ -779,13 +802,23 @@ img.de3 {
     position: absolute;
     top: 50%;
     left: 14%;
+    animation: rotate 4s linear infinite;
 }
 img.de4 {
     position: absolute;
     right: 5%;
     bottom: 8%;
+    animation: zoom 4s alternate infinite;
 }
-.intro-text .badge {
+@keyframes zoom {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        transform: scale(1.2) rotate(360deg);
+    }
+}
+.intro-text .badge, section#faq .badge{
     color: black;
     font-weight: 400;
     font-family: roboto;
@@ -806,8 +839,83 @@ img.de4 {
     left: 0;
     border-radius: 0 0 20px 20px;
 }
-  
+.intro-text h2 {
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.intro-text p {
+    color: #00000050;
+}
+ul.features-list li {
+    font-family: 'Roboto';
+    line-height: 40px;
+    font-size: 18px;
+}
+button.connect-btn {
+    background: var(--primary-color);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+section.about-mobile-app {
+    margin: 80px 0;
+}
+.img-main-mbaboutsec, .img-faq{
+    width: 100%;
+}
+.img-faq{
+    display: none;
+}
+section#faq {
+    background: url(../../../public/assets/images/mobileapp/faq.png);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+section#faq h2 {
+    font-family: roboto;
+    font-weight: bold;
+    color: black;
+}
 
+.accordion-button::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: none !important;
+    transform: none !important;
+    margin-left: auto;
+    color: black;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  .accordion-body {
+    font-family: roboto;
+    color: #00000050;
+    padding-left: 0;
+}
+  .accordion-button:not(.collapsed)::after {
+    content: '−';
+    background: var(--secondary-color);
+    color: white;
+  }
+  .accordion-button:not(.collapsed) {
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding-left: 0;
+}
+button.accordion-button.collapsed {
+    font-size: 20px;
+    padding-left: 0;
+}
 
 
 
@@ -844,6 +952,23 @@ img.de4 {
 @media screen and (max-width: 767px){
     .border-dahed {
         display: none;
+}
+.intro-text {
+    margin-top: 50px;
+}
+.img-main-mbaboutsec, .img-faq{
+    width: 100%;
+    display: block;
+}
+section#faq {
+    background: transparent;
+    padding: 0;
+}
+section.about-mobile-app {
+    margin: 40px 0;
+}
+.about-sec .row {
+    flex-direction: column-reverse;
 }
 }
 @media screen and (max-width: 769px){
