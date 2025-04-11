@@ -12,7 +12,7 @@ function App() {
   AOS.init({
   }); 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ckf-react">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
