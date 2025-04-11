@@ -14,7 +14,7 @@ export default function breadcum() {
                         </div>
                     </div>
                     <div className='col-8'>
-                        <div className="content">
+                        <div className="content d-flex justify-content-end">
                         <img src="./assets/images/mobileapp/mobile.png" alt="Mobile App Mockup" />
                         </div>
                     </div>

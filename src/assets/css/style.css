@@ -738,25 +738,26 @@ p.empowerment-card-text {
     overflow: hidden;
     background-size: cover;
   }
-  
+  .breadcrumb-microservices{
+    background: #2900F5;
+  }
   .breadcrumb-mobile-app .container {
     margin: 0 auto;
     padding: 0 20px;
   }
   
-  .breadcrumb-mobile-app .content {
+  .breadcrumb-mobile-app .content, .breadcrumb-microservices .content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
   }
   
-  .breadcrumb-mobile-app h1 {
+  .breadcrumb-mobile-app h1, .breadcrumb-microservices h1 {
     font-size: 64px;
     font-weight: bold;
     line-height: 1.2;
     margin: 0;
     z-index: 2;
+    color : #fff;
   }
   
   .breadcrumb-mobile-app img {

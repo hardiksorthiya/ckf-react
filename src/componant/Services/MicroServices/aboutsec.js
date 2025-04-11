@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function aboutsec() {
     return (
@@ -8,29 +9,27 @@ export default function aboutsec() {
                     
                     <div className='col-lg-6 col-md-6 col-sm-12'>
                         <div className="intro-text">
-                            <span className="badge">App Advantage 🔥</span>
                             <h2>
-                            Get Benefit By Using Trending Apps
+                            Powerful Server and Platform
                             </h2>
                             <p>
-                                There are many variations of passages of Lorem Ipsum available,
-                                but the majority have suffered alteration in some form, by
-                                injected humour, or randomised words which don't look even
-                                slightly believable. If you are going to use
+                            Leverage the latest innovations in cloud technology to improve operations and enhance user experience.
                             </p>
                             <ul className="features-list">
-                                <li>✅ Friendly Design</li>
-                                <li>✅ Cloud Storage</li>
-                                <li>✅ SEO Optimized</li>
-                                <li>✅ Strong Security</li>
+                                <li>✅ Better Security and faster Server</li>
+                                <li>✅ No-Downtime website transfers</li>
+                                <li>✅ Deployment within few minutes</li>
                             </ul>
+                            <Link to="/" className="learn-more-btn">
                             <button className="connect-btn">Connect Now</button>
+                            </Link>
+                            
                         </div>
                     </div>
                     <div className='col-lg-6 col-md-6 col-sm-12'>
                         <div className='image-section position-relative'>
                             <div className='image-main-sec position-relative d-flex justify-content-center align-items-center'>
-                                <img src="./assets/images/mobileapp/mobile2.png" alt="Mobile App Mockup" className='img-main-mbaboutsec' />
+                                <img src="./assets/images/microservices/about2.png" alt="Mobile App Mockup" className='img-main-mbaboutsec' />
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './componant/Home/Home';
 import MobileApp from './componant/Services/MobileApp/MobileApp';
-import MicroServices from './componant/Services/MicroServices/MicroServices';
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,7 +13,7 @@ function App() {
   AOS.init({
   }); 
   return (
-    <BrowserRouter basename="/ckf-react">
+    <BrowserRouter >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />

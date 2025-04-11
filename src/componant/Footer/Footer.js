@@ -38,8 +38,8 @@ const Footer = () => {
                             <h5>Services</h5>
                             <hr />
                             <ul className="list-unstyled">
-                                <li><a href='/'>Mobile App</a></li>
-                                <li><a href='/'>Micro Services</a></li>
+                                <li><a href='/mobile-app'>Mobile App</a></li>
+                                <li><a href='/micro-services'>Micro Services</a></li>
                                 <li><a href='/'>Cloud Services</a></li>
                                 <li><a href='/'>Migration</a></li>
                                 <li><a href='/'>Dev Ops</a></li>
